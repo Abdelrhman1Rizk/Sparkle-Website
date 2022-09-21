@@ -9,7 +9,7 @@ setInterval(() => {
     let randVar = Math.floor(Math.random() * imgs.length);
     landingPage.style.backgroundImage = 'url("images/' + imgs[randVar] + '")';
     
-},10000)
+},15000)
 //-----------------------
 let list = document.querySelectorAll('.list');
 let boxs = document.querySelectorAll('.boxshuffle');
