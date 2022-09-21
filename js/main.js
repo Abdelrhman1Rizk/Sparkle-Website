@@ -1,3 +1,16 @@
+let landingPage = document.querySelector('.landing-section')
+let imgs = [
+    "l1.webp",
+    "l2.webp",
+    "l3.webp",
+    "l4.webp",
+]
+setInterval(() => {
+    let randVar = Math.floor(Math.random() * imgs.length);
+    landingPage.style.backgroundImage = 'url("images/' + imgs[randVar] + '")';
+    
+},5000)
+//-----------------------
 let list = document.querySelectorAll('.list');
 let boxs = document.querySelectorAll('.boxshuffle');
 for(let i = 0; i<list.length;i++){
@@ -17,7 +30,6 @@ for(let i = 0; i<list.length;i++){
         }
     })
 };
-
 let dropdownBtn = document.querySelector('.menu-btn');
 let menuContent = document.querySelector('.menu-content');
 dropdownBtn.addEventListener('click',()=>{
@@ -27,3 +39,4 @@ dropdownBtn.addEventListener('click',()=>{
         menuContent.style.display="";
     }
 });
+//-----------------------
