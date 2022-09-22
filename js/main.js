@@ -11,6 +11,24 @@ setInterval(() => {
     
 },15000)
 //-----------------------
+let dropdownBtn = document.querySelector('.menu-btn');
+let menuContent = document.querySelector('.menu-content');
+dropdownBtn.addEventListener('click',(e)=>{
+    e.stopPropagation()
+    if(menuContent.style.display===""){
+        menuContent.style.display="block";
+    } else {
+        menuContent.style.display="";
+    }
+});
+document.addEventListener("click",(e) =>{
+    if(e.target !== dropdownBtn && e.target !== menuContent){
+        if(menuContent.style.display==="block"){
+            menuContent.style.display="";
+        }
+    }
+})
+//-----------------------
 let list = document.querySelectorAll('.list');
 let boxs = document.querySelectorAll('.boxshuffle');
 for(let i = 0; i<list.length;i++){
@@ -30,13 +48,4 @@ for(let i = 0; i<list.length;i++){
         }
     })
 };
-let dropdownBtn = document.querySelector('.menu-btn');
-let menuContent = document.querySelector('.menu-content');
-dropdownBtn.addEventListener('click',()=>{
-    if(menuContent.style.display===""){
-        menuContent.style.display="block";
-    } else {
-        menuContent.style.display="";
-    }
-});
 //-----------------------

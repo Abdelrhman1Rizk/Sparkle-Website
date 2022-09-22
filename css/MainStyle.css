@@ -57,9 +57,6 @@ a{
 .main-heading {
     padding-bottom: 60px;
 }
-.main-heading i {
-    font-size: 30px;
-}
 .main-heading h3{
     font-weight: 400;
     letter-spacing: 8px;
@@ -104,6 +101,10 @@ a{
 .header .links .icon span:nth-child(2){
     width:80%;
     transition:width 0.3s ;
+    -webkit-transition:width 0.3s ;
+    -moz-transition:width 0.3s ;
+    -ms-transition:width 0.3s ;
+    -o-transition:width 0.3s ;
 }
 .header .links:hover .icon span:nth-child(2){
     width:100%
@@ -111,6 +112,10 @@ a{
 .header .links .icon span:last-child{
     width:60%;
     transition: width 0.4s;
+    -webkit-transition: width 0.4s;
+    -moz-transition: width 0.4s;
+    -ms-transition: width 0.4s;
+    -o-transition: width 0.4s;
 }
 .header .links:hover .icon span:last-child{
     width:100%
@@ -174,6 +179,10 @@ a{
     text-align:center;
     width:875px;
     max-width: 100%;
+    -webkit-transform:translate(-50% , -50%);
+    -moz-transform:translate(-50% , -50%);
+    -ms-transform:translate(-50% , -50%);
+    -o-transform:translate(-50% , -50%);
 }
 .landing-section .info h4{
     color: white;
@@ -212,6 +221,10 @@ a{
     letter-spacing: 2px;
     border: none;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 .landing-section .arrows{
     position: absolute;
@@ -230,11 +243,7 @@ a{
     animation-direction: alternate;  
 }
 .landing-section .arr1{
-    font-size: 10px;
     margin-bottom: -13px;
-}
-.landing-section .arr2{
-    font-size: 25px;
 }
 @keyframes arrow-play {
     0% {
@@ -268,13 +277,15 @@ a{
     left: 50%;
     transform:translate(-50% , -50%);
     text-align: center;
+    -webkit-transform:translate(-50% , -50%);
+    -moz-transform:translate(-50% , -50%);
+    -ms-transform:translate(-50% , -50%);
+    -o-transform:translate(-50% , -50%);
 }
 .mountain .content .mount-icon{
     color: var(--main-color);
-    font-size: 60px;
 }
-.mountain .content .mount-icon .ico2{
-    font-size: 45px;
+.mountain .content .mount-icon .ico{
     margin-left: -30px;
 }
 .mountain .content p{
@@ -298,10 +309,6 @@ a{
     box-shadow: 0 2px 10px 0 rgba(0,0,0,.21);
     padding: 40px 35px 20px;
     margin-bottom: 25px;
-}
-.Services-list .services .serv-box i{
-    color: var(--main-color);
-    font-size: 55px;
 }
 .Services-list .services .serv-box h4{
     font-weight: 500;
@@ -825,6 +832,9 @@ bottom:-100%;
     text-align: center;
     line-height: 2;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .footer .inner-foot .contact-us ul li i{
     color: var(--secondry-color);
